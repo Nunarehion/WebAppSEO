@@ -1,0 +1,36 @@
+.dropdown {
+    position: relative;
+  
+    &__title {
+      font-weight: bold;
+      color: var(--accent-color);
+    }
+  
+    &__menu {
+      min-width: 11rem;
+  
+      &--overlay {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: var(--main-space);
+        width: max-content;
+        padding: var(--main-space);
+        z-index: 1;
+        border-radius: 0.5rem;
+        box-shadow: var(--shadow-lg);
+        background-color: var(--bg-primary);
+        margin: var(--main-space);
+      }
+    }
+  
+    &__item {
+      padding: var(--main-space);
+      cursor: pointer;
+  
+      &:hover {
+        background-color: var(--bg-secondary);
+      }
+    }
+  }
+  

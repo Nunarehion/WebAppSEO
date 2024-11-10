@@ -1,0 +1,42 @@
+.icon {
+    width: 1rem;
+    aspect-ratio: 1;
+    outline: 1px solid;
+    float: left;
+    margin-right: .5rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    &--link {
+      float: right;
+      margin-right: 0;
+    }
+  
+    &--arrow-back {
+      background-image: url("https://www.svgrepo.com/download/510041/left-arrow.svg");
+    }
+  
+    &--toggle-arrow {
+      &:after {
+        @extend .icon;
+        outline: none;
+        display: flex;
+        content: "";
+        float: right;
+        margin: 0;
+        transform: scale(.5) rotate(180deg);
+        transition: transform .5s;
+        background-image: url("https://www.svgrepo.com/download/395348/triangle-up.svg");
+      }
+  
+      &:has(+ .hidden):after {
+        transform: scale(.5);
+      }
+    }
+  
+    &--burger {
+      width: 2rem;
+    }
+  }
+  

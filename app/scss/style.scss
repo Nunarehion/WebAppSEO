@@ -1,0 +1,17 @@
+@import '_variables';
+@import '_reset';
+@import '_button';
+@import '_icon';
+@import '_sidebar';
+@import '_header';
+@import '_modal';
+@import '_dropdown';
+@import '_accordion';
+@import '_panel';
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: max-content 1fr;
+    background: #F7F7F7;
+  }

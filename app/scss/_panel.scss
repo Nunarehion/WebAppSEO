@@ -1,0 +1,42 @@
+.panel {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+  
+    &__header {
+      font-weight: bold;
+      font-size: 1.25rem;
+      padding: var(--main-space);
+      border-bottom: 1px solid var(--text-color-secondary);
+    }
+  
+    &__content {
+      padding: var(--main-space);
+      background: var(--bg-secondary);
+      border-radius: 0.5rem;
+      box-shadow: var(--shadow-md);
+    }
+  
+    &__footer {
+      display: flex;
+      justify-content: flex-end;
+      padding: var(--main-space);
+      border-top: 1px solid var(--text-color-secondary);
+    }
+  
+    &--highlighted {
+      background: var(--accent-color);
+      color: white;
+  
+      &__header {
+        color: white;
+      }
+    }
+  
+    &--disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+  

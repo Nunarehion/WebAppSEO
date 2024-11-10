@@ -1,0 +1,26 @@
+.btn {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0;
+    cursor: pointer;
+  
+    &--icon {
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 25px;
+    }
+  
+    &--info {
+      color: var(--accent-color);
+    }
+  
+    &--send {
+      padding: .5rem 1rem;
+      border-radius: .5rem;
+      background: var(--accent-color);
+      color: white;
+    }
+  }
+  

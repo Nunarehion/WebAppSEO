@@ -1,0 +1,40 @@
+.accordion {
+    border: 1px solid var(--text-color-secondary);
+    border-radius: 0.5rem;
+    overflow: hidden;
+  
+    &__item {
+      border-bottom: 1px solid var(--text-color-secondary);
+      
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--main-space);
+      cursor: pointer;
+      background: var(--bg-primary);
+      transition: background 0.3s;
+  
+      &:hover {
+        background: var(--bg-secondary);
+      }
+    }
+  
+    &__content {
+      padding: var(--main-space);
+      display: none;
+      background: var(--bg-secondary);
+    }
+  
+    &--active {
+      &__content {
+        display: block;
+      }
+    }
+  }
+  
