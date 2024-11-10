@@ -1,8 +1,4 @@
-.accordion {
-    border: 1px solid var(--text-color-secondary);
-    border-radius: 0.5rem;
-    overflow: hidden;
-  
+.accordion {  
     &__item {
       border-bottom: 1px solid var(--text-color-secondary);
       

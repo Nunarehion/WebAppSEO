@@ -50,6 +50,8 @@ table {
 
 /* ================ */
 * {
+  border: none;
+  outline: none;
   box-sizing: border-box;
   line-height: 1;
   user-select: none;
@@ -62,6 +64,7 @@ html {
 .btn {
   background: none;
   border: none;
+  outline: none;
   font-size: 1rem;
   padding: 0;
   cursor: pointer;
@@ -181,7 +184,7 @@ html {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.3333333333);
   z-index: 998;
 }
 .modal__content {
@@ -223,7 +226,7 @@ html {
 .dropdown__menu {
   min-width: 11rem;
 }
-.dropdown__menu--overlay {
+.dropdown__menu_overlay {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -237,18 +240,18 @@ html {
   margin: var(--main-space);
 }
 .dropdown__item {
-  padding: var(--main-space);
+  color: var(--text-color-primary);
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 .dropdown__item:hover {
   background-color: var(--bg-secondary);
 }
-
-.accordion {
-  border: 1px solid var(--text-color-secondary);
-  border-radius: 0.5rem;
-  overflow: hidden;
+.dropdown__item--active {
+  background-color: var(--accent-color);
+  color: white;
 }
+
 .accordion__item {
   border-bottom: 1px solid var(--text-color-secondary);
 }
